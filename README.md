@@ -14,10 +14,16 @@ Once the files .inc are uploaded, the playbook runs */etc/rc.update_alias_url_da
 Requisites
 ==========
 
+## Enable ssh
+To enable ssh follow the steps here: https://doc.pfsense.org/index.php/HOWTO_enable_SSH_access
+
+## Install Python
 By default pfsense doesn't provide python interperter, that is necessary to run ansible in it. As root in pfsense, run:
 
 ```sh
-pkg_add -r http://ftp-archive.freebsd.org/pub/FreeBSD-Archive/ports/amd64/packages-8.3-release/python/python27-2.7.2_4.tbz
+pkg
+pkg update
+pkg install python
 ```
 
 Then, test ansible connection with:
