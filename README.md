@@ -32,6 +32,9 @@ Then, test ansible connection with:
 ansible -m ping -i hosts fwhost
 ```
 
+## Role account
+TBA
+
 Define url tables
 =================
 
@@ -43,3 +46,7 @@ How to run
 ```sh
 ansible-playbook -i hosts update_firewalls.yml
 ```
+
+Refrences
+=========
+[pfSense_shell](https://doc.pfsense.org/index.php/Using_the_PHP_pfSense_Shell)
